@@ -13,7 +13,6 @@ window.onload = function (e) {
   setHeight();
 };
 
-// reload lại page khi xoay ngang màn hình
 window.addEventListener("orientationchange", function () {
   var afterOrientationChange = function () {
     window.location.reload();
@@ -23,4 +22,87 @@ window.addEventListener("orientationchange", function () {
   window.addEventListener("resize", afterOrientationChange);
 });
 
-$(document).ready(function () {});
+$(function () {
+  $(".slick_betia_feedback").slick({
+    slidesToShow: 4,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $(".slick_betia_introduce").slick({
+    slidesToShow: 3,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: true,
+    nextArrow: `<button type="button">
+    <img src="./assets/images/btn_next.png" alt="">
+  </button>`,
+    prevArrow: `<button type="button">
+    <img src="./assets/images/btn_prev.png" alt="">
+  </button>`,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    },
+  ]
+  });
+});
