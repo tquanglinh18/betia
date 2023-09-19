@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CF</title>
+  <title>Betia</title>
+  <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/aos.css">
   <link rel="stylesheet" href="./assets/css/base.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -14,10 +15,801 @@
 </head>
 
 <body>
-  <section></section>
+  <header class="w-full py-4 px-8">
+    <div class="flex items-center justify-between lg:justify-around w-full">
+      <div class="">
+        <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+      </div>
+      <div class="hidden lg:block">
+        <div class="flex justify-center items-center space-x-6">
+          <ul class="flex justify-center items-center space-x-6">
+            <li class="">
+              <a class="hover:text-[#1A82B3]" href="/home">Trang chủ</a>
+            </li>
+            <li class="">
+              <a class="hover:text-[#1A82B3]" href="/introduce">Giới thiệu</a>
+            </li>
+            <li class="">
+              <a class="hover:text-[#1A82B3]" href="/products">Sản phẩm</a>
+            </li>
+            <li class="">
+              <a class="hover:text-[#1A82B3]" href="/news">Tin tức</a>
+            </li>
+            <li class="">
+              <a class="hover:text-[#1A82B3]" href="/support">Hỗ trợ</a>
+            </li>
+          </ul>
+          <button class="bg-[#F24B18] min-w-[212px] rounded-lg flex justify-center items-center space-x-2 px-4 py-2 ">
+            <p class="text-white">Trải nghiệm ngay</p>
+            <div class="">
+              <img src="./assets/images/ic_download.png" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+      <button type="button" class="lg:hidden">
+        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-2xl p-4">
+          <img src="./assets/images/ic_menu_mobile.png" alt="">
+        </div>
+      </button>
+    </div>
+  </header>
+  <section class="w-full">
+    <first-section>
+    </first-section>
+
+    <second-section class="md:bg_second_section w-full flex justify-center items-center flex-col mb-[8%]">
+      <div class="max-w-[1000px] w-full mx-auto flex justify-center items-center flex-col">
+        <div class="w-full mb-[12%]">
+          <div class="mb-[4%] text-center px-4">
+            <h3 class="font-bold text-[32px] mb-[2%]">Những con số biết nói</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa ut fugit.</p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row items-center justify-center md:justify-around space-x-0 space-y-8 md:space-y-0 md:space-x-8 w-full px-4">
+            <div class="flex justify-center items-center flex-col w-full">
+              <div class="flex justify-center items-center space-x-4 px-8 py-4">
+                <img src="./assets/images/ic_lorem.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="w-[70%] md:w-full bg-[#1E202B4D] h-[1px] my-4"></div>
+              <p class="font-medium text-[24px]"><span class="font-extrabold text-[32px]">34</span> Lorem</p>
+            </div>
+            <div class="flex justify-center items-center flex-col w-full">
+              <div class="flex justify-center items-center space-x-4 px-8 py-4">
+                <img src="./assets/images/ic_lorem.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="w-[70%] md:w-full bg-[#1E202B4D] h-[1px] my-4"></div>
+              <p class="font-medium text-[24px]"><span class="font-extrabold text-[32px]">34,000</span> Lorem</p>
+            </div>
+            <div class="flex justify-center items-center flex-col w-full">
+              <div class="flex justify-center items-center space-x-4 px-8 py-4">
+                <img src="./assets/images/ic_lorem.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="w-[70%] md:w-full bg-[#1E202B4D] h-[1px] my-4"></div>
+              <p class="font-medium text-[24px]"><span class="font-extrabold text-[32px]">34</span> Lorem</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <div class="mb-[4%] px-4">
+            <h3 class="font-bold text-[32px] text-center mb-[2%]">Tại sao chọn Betia English ?</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa ut fugit.</p>
+          </div>
+          <div class="slick_betia_introduce mb-[2%] w-full">
+            <div class="flex items-center justify-center flex-col mx-6 my-4">
+              <div class="relative inset-0 mb-[12%] flex justify-center items-center">
+                <div class="max-w-[200px] w-full h-[200px] bg-[#F24B18] rounded-xl rotate-6"></div>
+                <div class="w-[210px] h-[210px] bg-black absolute top-0 rounded-xl -translate-x-5 -translate-y-3"></div>
+              </div>
+              <p class="font-medium text-[20px] w-full text-center">Nói chuyện như người bản ngữ</p>
+            </div>
+            <div class="flex items-center justify-center flex-col mx-6 my-4">
+              <div class="relative inset-0 mb-[12%] flex justify-center items-center">
+                <div class="max-w-[200px] w-full h-[200px] bg-[#F24B18] rounded-xl rotate-6"></div>
+                <div class="w-[210px] h-[210px] bg-black absolute top-0 rounded-xl -translate-x-5 -translate-y-3"></div>
+              </div>
+              <p class="font-medium text-[20px] w-full text-center line-clamp-5">Đi du lịch nước ngoài và nói
+                như một người bản ngữ</p>
+            </div>
+            <div class="flex items-center justify-center flex-col mx-6 my-4">
+              <div class="relative inset-0 mb-[12%] flex justify-center items-center">
+                <div class="max-w-[200px] w-full h-[200px] bg-[#F24B18] rounded-xl rotate-6"></div>
+                <div class="w-[210px] h-[210px] bg-black absolute top-0 rounded-xl -translate-x-5 -translate-y-3"></div>
+              </div>
+              <p class="font-medium text-[20px] w-full text-center line-clamp-5">Đi du lịch nước ngoài và nói
+                như một người bản ngữ</p>
+            </div>
+            <div class="flex items-center justify-center flex-col mx-6 my-4">
+              <div class="relative inset-0 mb-[12%] flex justify-center items-center">
+                <div class="max-w-[200px] w-full h-[200px] bg-[#F24B18] rounded-xl rotate-6"></div>
+                <div class="w-[210px] h-[210px] bg-black absolute top-0 rounded-xl -translate-x-5 -translate-y-3"></div>
+              </div>
+              <p class="font-medium text-[20px] w-full text-center">Nói chuyện như người bản ngữ</p>
+            </div>
+            <div class="flex items-center justify-center flex-col mx-6 my-4">
+              <div class="relative inset-0 mb-[12%] flex justify-center items-center">
+                <div class="max-w-[200px] w-full h-[200px] bg-[#F24B18] rounded-xl rotate-6"></div>
+                <div class="w-[210px] h-[210px] bg-black absolute top-0 rounded-xl -translate-x-5 -translate-y-3"></div>
+              </div>
+              <p class="font-medium text-[20px] w-full text-center line-clamp-5">Đi du lịch nước ngoài và nói
+                như một người bản ngữ</p>
+            </div>
+            <div class="flex items-center justify-center flex-col mx-6 my-4">
+              <div class="relative inset-0 mb-[12%] flex justify-center items-center">
+                <div class="max-w-[200px] w-full h-[200px] bg-[#F24B18] rounded-xl rotate-6"></div>
+                <div class="w-[210px] h-[210px] bg-black absolute top-0 rounded-xl -translate-x-5 -translate-y-3"></div>
+              </div>
+              <p class="font-medium text-[20px] w-full text-center line-clamp-5">Đi du lịch nước ngoài và nói
+                như một người bản ngữ</p>
+            </div>
+          </div>
+          <div class="px-4 max-w-[1000px] mx-auto w-full">
+            <div class="bg-[#1E202B4D] h-[2px] w-full"></div>
+          </div>
+        </div>
+      </div>
+    </second-section>
+
+    <third-section>
+      <div class="max-w-[1000px] w-full mx-auto mb-[8%] lg:mb-[6%]">
+        <div class="my-[4%] px-4">
+          <h3 class="font-bold text-[32px] text-center mb-[2%]">Gói học Betia English</h3>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa ut fugit.</p>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-center items-center space-x-0 lg:space-x-6 space-y-8 lg:space-y-0 px-4 mb-[6%]">
+          <div class="bg-[#F6F6F6] rounded-2xl border border-[#F0F0F0] text-[#252525]">
+            <div class="px-8 mb-[6%] mt-[15%] text-center">
+              <h3 class="font-bold text-[32px] ">Betia English 30</h3>
+              <p class="font-semibold">Sử dụng Betia English 30 ngày không giới hạn</p>
+            </div>
+            <div class="px-8 mb-[6%]">
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+            </div>
+            <div class="w-full rounded-2xl bg-[#F0F0F0] p-[6%] text-center">
+              <h3 class="text-[#3E3E3E] text-opacity-50 font-bold text-[24px] mb-2 line-through">150GO</h3>
+              <p>Chỉ:</p>
+              <h3 class="font-bold text-[20px] mb-[8%]">99GO/ tháng</h3>
+              <div class="w-full bg-[#F24B18] font-bold text-white p-4 rounded-2xl">
+                Chọn gói
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#F6F6F6] rounded-2xl border border-[#F0F0F0] text-[#252525]">
+            <div class="px-8 mb-[6%] mt-[15%] text-center">
+              <h3 class="font-bold text-[32px] ">Betia English 30</h3>
+              <p class="font-semibold">Sử dụng Betia English 30 ngày không giới hạn</p>
+            </div>
+            <div class="px-8 mb-[6%]">
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+              <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                <p>Feature Eleven</p>
+              </div>
+            </div>
+            <div class="w-full rounded-2xl bg-[#F0F0F0] p-[6%] text-center">
+              <h3 class="text-[#3E3E3E] text-opacity-50 font-bold text-[24px] mb-2 line-through">150GO</h3>
+              <p>Chỉ:</p>
+              <h3 class="font-bold text-[20px] mb-[8%]">99GO/ tháng</h3>
+              <div class="w-full bg-[#F24B18] font-bold text-white p-4 rounded-2xl">
+                Chọn gói
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="bg-[#F6F6F6] rounded-2xl border border-[#F0F0F0] text-[#252525]">
+              <div class="px-8 mb-[6%] mt-[15%] text-center">
+                <h3 class="font-bold text-[32px] ">Betia English 30</h3>
+                <p class="font-semibold">Sử dụng Betia English 30 ngày không giới hạn</p>
+              </div>
+              <div class="px-8 mb-[6%]">
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                  <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                  <p>Feature Eleven</p>
+                </div>
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                  <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                  <p>Feature Eleven</p>
+                </div>
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                  <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                  <p>Feature Eleven</p>
+                </div>
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                  <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                  <p>Feature Eleven</p>
+                </div>
+                <div class="flex justify-center items-center space-x-4 mb-4">
+                  <div class=""><img src="./assets/images/ic_check.png" alt=""></div>
+                  <p>Feature Eleven</p>
+                </div>
+              </div>
+              <div class="w-full rounded-2xl bg-[#F0F0F0] p-[6%] text-center">
+                <h3 class="text-[#3E3E3E] text-opacity-50 font-bold text-[24px] mb-2 line-through">150GO</h3>
+                <p>Chỉ:</p>
+                <h3 class="font-bold text-[20px] mb-[8%]">99GO/ tháng</h3>
+                <div class="w-full bg-[#F24B18] font-bold text-white p-4 rounded-2xl">
+                  Chọn gói
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-[#105296] rounded-xl text-white flex justify-center items-center space-x-2 px-4 py-1 absolute top-0 -translate-y-[50%] -translate-x-[50%] left-[50%]">
+              <div class="w-[6px] h-[6px] rounded-full bg-[#F24B18]"></div>
+              <p class="text-white font-bold text-base lg:text-[14px]">Gói ưu đãi nhất</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-[90%] mx-auto mb-[4%]">
+          <div class="p-[6%] md:p-[4%] w-full left-0 -z-10 bg-[#F24B18] text-white rounded-[32px]">
+            <div class="mb-[4%] w-full md:w-[60%]">
+              <h3 class="mb-[4%] text-[20px] md:text-[32px] font-bold">Dùng thử Betia English miễn phí</h3>
+              <p>Hãy trải nghiệm Betia English với cách học tiếng anh khác biệt.
+                10 phút mỗi ngày</p>
+            </div>
+            <button type="button" class="bg-white text-[#105296] font-bold px-6 py-3 rounded-lg max-w-[200px]">TRẢI
+              NGHIỆM NGAY</button>
+            <div class="relative md:absolute md:top-0 md:right-0 md:translate-y-[15%] flex items-end justify-end">
+              <img src="./assets/images/ic_turtle.png" alt="" class="aspect-square">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </third-section>
+
+    <fourth-section>
+      <div class="max-w-[1000px] w-full mx-auto mb-[8%] lg:mb-[4%]">
+        <div class="w-full bg-gradient-to-b from-[#f7661f0d] to-[#eaeaea00] py-[8%] lg:py-[4%]">
+          <div class="flex justify-center">
+            <img src="./assets/images/intro_betia_package.png" alt="">
+          </div>
+          <div class="my-[4%] px-4">
+            <h3 class="font-bold text-[32px] text-center mb-[2%]">Người dùng nói gì sau khi sử dụng Betia English</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa ut fugit.</p>
+          </div>
+          <div class="w-full">
+            <div class="slick_betia_feedback mb-[2%]">
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+              <div class="bg-gradient-to-t from-[#EAEAEA] to-[#F5F5F5] border-[#1A82B3] p-6 mx-4 border rounded-2xl">
+                <div class="flex items-center justify-start space-x-4 mb-4">
+                  <div class="h-[48px] w-[48px] rounded-full bg-black aspect-square">
+                    <img src="./assets/images/logo_betia.png" alt="" class="object-cover">
+                  </div>
+                  <div class="">
+                    <p class="text-[#105296] font-bold text-[18px]">Nguyễn Ngọc Khánh An</p>
+                    <p class="text-[#105296]">Văn phòng</p>
+                  </div>
+                </div>
+                <div class="star"></div>
+                <div class="text-[#105296]">
+                  <p>Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed
+                    pellentesque
+                    arcu. Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 max-w-[1000px] mx-auto w-full">
+          <div class="bg-[#1E202B4D] h-[2px] w-full"></div>
+        </div>
+      </div>
+    </fourth-section>
+
+    <fifth-section>
+      <div class="download_section my-[16%] md:my-[8%] lg:my-[4%]">
+        <div class="max-w-[1000px] py-[2%] px-4 mx-auto flex flex-col lg:flex-row items-center justify-around">
+          <p class="text-[#105296] font-bold text-[28px] mb-[6%] md:hidden">Cài đặt ứng dụng</p>
+          <div class="">
+            <img src="./assets/images/intro_betia_download.png" alt="">
+          </div>
+          <div class="flex justify-center items-center flex-col ">
+            <p class="text-[#105296] font-bold text-[24px] mb-[6%] hidden md:block">Cài đặt ứng dụng</p>
+            <div class="mb-[4%] hidden md:block">
+              <img src="./assets/images/qr_download_betia.png" alt="" class="aspect-square">
+            </div>
+            <p class="text-[#105296] font-bold text-[24px] mb-[4%] hidden md:block">Hoặc</p>
+            <div class="flex space-x-2 md:space-x-6">
+              <div
+                class="cursor-pointer bg-black rounded-lg px-4 py-2 md:py-3 min-w-[173px] flex justify-center items-center space-x-2">
+                <div class="h-full">
+                  <img src="./assets/images/ic_app_store.png" alt="" class="h-full">
+                </div>
+                <div class="text-white">
+                  <p class="text-[10px]">Download on the</p>
+                  <p class="font-medium">AppStore</p>
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-black rounded-lg px-4 py-2 md:py-3 min-w-[173px] flex justify-center items-center space-x-2">
+                <div class="h-full">
+                  <img src="./assets/images/ic_gg_play.png" alt="" class="h-full">
+                </div>
+                <div class="text-white">
+                  <p class="text-[10px]">GET IT ON</p>
+                  <p class="font-medium">Google Play</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fifth-section>
+    <div class="max-w-[1000px] w-full mx-auto mb-[8%]">
+      <div class="ml-[15%]">
+        <img src="./assets/images/ic_top_form.png" alt="">
+      </div>
+      <div class="px-4 md:mx-[10%] lg:px-4">
+        <div
+          class="bg-[#F6F6F6] w-full lg:w-[75%] border border-[#DDE1E6] mx-auto px-[5%] py-[15%] md:py-[10%] lg:py-[5%] rounded-[24px]">
+          <h3 class="text-[#105296] mb-[4%] lg:mb-[2%] text-[24px] font-bold">Nhận tư vấn miễn phí</h3>
+          <p class="mb-[15%] md:mb-[6%] lg:mb-[2%]">Rhoncus morbi et augue nec, in id ullamcorper at sit. </p>
+          <form action="">
+            <div class="flex flex-col mb-[4%] lg:mb-[2%]">
+              <label for="" class="mb-[2%] lg:mb-[1%]">Họ và tên</label>
+              <input type="text" name="" id="" placeholder="Nhập họ và tên tại đây..."
+                class="px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]">
+            </div>
+            <div class="flex flex-col mb-[4%] lg:mb-[2%]">
+              <label for="vande" class="mb-[2%] lg:mb-[1%]">Bạn cần tư vấn vấn đề ?</label>
+              <div class="relative inset-0">
+                <select type="text" name="" id="vande" placeholder="Chọn tại đây..."
+                  class="w-full px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]">
+                  <option value="" selected disabled>Chọn tại đây...</option>
+                  <option value="">Hahaa</option>
+                  <option value="">Hahaa</option>
+                  <option value="">Hahaa</option>
+                </select>
+                <div class="absolute top-[50%] z-10 -translate-y-[50%] right-[16px]">
+                  <img src="./assets/images/ic_dropdown.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col mb-[4%] lg:mb-[2%]">
+              <label for="" class="mb-[2%] lg:mb-[1%]">Email</label>
+              <input type="text" name="" id="" placeholder="Nhập email tại đây..."
+                class="px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]">
+            </div>
+            <div class="flex flex-col mb-[4%] lg:mb-[2%]">
+              <label for="" class="mb-[2%] lg:mb-[1%]">Số điện thoại</label>
+              <input type="text" name="" id="" placeholder="Nhập SĐT tại đây..."
+                class="px-4 py-2 rounded-lg border-b border-b-[#C1C7CD]">
+            </div>
+            <div class="flex justify-end">
+              <button type="submit"
+                class="bg-[#F24B18] min-w-[115px] rounded-lg flex justify-center items-center space-x-2 px-4 py-2 text-white">
+                Gửi ngay
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <sixth-section>
+
+    </sixth-section>
+    <div class="mb-[4%] lg:mb-[8%] max-w-[1280px] w-full mx-auto">
+      <div class="my-[4%] px-6">
+        <h3 class="font-bold text-[32px] text-center mb-[2%]">Tin tức</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa ut fugit.</p>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center space-x-0 space-y-8 lg:space-y-0 lg:space-x-8 mb-[4%] px-4 md:mx-[10%] lg:px-4">
+        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+          <div class="w-full mb-[2%]">
+            <img src="./assets/images/bg_news.JPEG" alt="" class="w-full aspect-video object-cover rounded-lg">
+          </div>
+          <div class="p-4">
+            <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2">
+              Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+            </p>
+            <p class="line-clamp-5">Get inspired by this revived W.H. Auden’s Hymn to the United Nations. "Let music for
+              peace Be the
+              paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick and Tock.So may the
+              story</p>
+          </div>
+        </div>
+        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+          <div class="w-full mb-[2%]">
+            <img src="./assets/images/bg_news.JPEG" alt="" class="w-full aspect-video object-cover rounded-lg">
+          </div>
+          <div class="p-4">
+            <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2">
+              Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+            </p>
+            <p class="line-clamp-5">Get inspired by this revived W.H. Auden’s Hymn to the United Nations. "Let music for
+              peace Be the
+              paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick and Tock.So may the
+              story</p>
+          </div>
+        </div>
+        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+          <div class="w-full mb-[2%]">
+            <img src="./assets/images/bg_news.JPEG" alt="" class="w-full aspect-video object-cover rounded-lg">
+          </div>
+          <div class="p-4">
+            <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2">
+              Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+            </p>
+            <p class="line-clamp-5">Get inspired by this revived W.H. Auden’s Hymn to the United Nations. "Let music for
+              peace Be the
+              paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick and Tock.So may the
+              story</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button type="submit"
+          class="bg-[#F24B18] min-w-[127px] rounded-lg flex justify-center items-center space-x-2 px-4 py-2 text-white">
+          Xem thêm
+        </button>
+      </div>
+    </div>
+    <seventh-section>
+
+    </seventh-section>
+  </section>
+
+  <footer class="w-full bg-[#F6F6F6]">
+    <div class="w-full max-w-[1280px] mx-auto pt-[10%] md:pt-[4%]">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center space-y-12 space-x-0 md:space-x-12 md:space-y-0 mb-4">
+        <div class="">
+          <img src="./assets/images/logo_vtc_online.png" alt="">
+        </div>
+        <div class="">
+          <img src="./assets/images/logo_betia_transparent.png" alt="">
+        </div>
+      </div>
+      <h3 class="text-center mb-[4%] px-4">BETIA 1 sản phẩm giáo dục đến từ Hàn Quốc được phát hành bởi VTC
+        Online
+      </h3>
+      <div
+        class="w-full md:w-[75%] lg:w-full px-4 lg:px-0 mx-auto flex flex-col lg:flex-row justify-between items-start lg:space-x-4">
+        <div class="w-full lg:w-[50%]">
+          <div class="mb-[4%] text-[#0A033C] font-bold text-[20px]">
+            <p>Thông tin liên hệ</p>
+          </div>
+          <div class="px-4 lg:px-0">
+            <div class="mb-4">
+              <div class="flex items-center space-x-2 mb-1">
+                <div class="">
+                  <img src="./assets/images/ic_location.png" alt="">
+                </div>
+                <p class="font-bold">Địa chỉ :</p>
+              </div>
+              <p>Tầng 12, Tòa nhà VTC Online, 18 Tam Trinh,</p>
+              <p>Phường Minh Khai, Quận Hai Bà Trưng, Hà Nội, Việt Nam</p>
+            </div>
+            <div class="mb-4">
+              <div class="flex items-center space-x-2 mb-1">
+                <div class="">
+                  <img src="./assets/images/ic_calling.png" alt="">
+                </div>
+                <p class="font-bold">Số điện thoại :</p>
+              </div>
+              <div class="text-[#105296] flex flex-col">
+                <a href="/">Hotline: 0832306226</a>
+                <a href="/">Tổng đài: 1900 636876 (Bấm phím 4)</a>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="flex items-center space-x-2 mb-1">
+                <div class="">
+                  <img src="./assets/images/ic_time_circle.png" alt="">
+                </div>
+                <p class="font-bold">Thời gian làm việc :</p>
+              </div>
+              <p>08:30 AM - 05:30 PM (Thứ 2- Thứ 6)</p>
+            </div>
+            <div class="mb-4">
+              <div class="flex items-center space-x-2 mb-1">
+                <div class="">
+                  <img src="./assets/images/ic_message.png" alt="">
+                </div>
+                <p class="font-bold">Email liên hệ :</p>
+              </div>
+              <a href="/">lienhe@betia.vn</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-[25%]">
+          <div class="mb-[4%] lg:mb-[8%] text-[#0A033C] font-bold text-[20px]">
+            Danh mục
+          </div>
+          <ul class="font-bold text-[#105296] px-4 lg:px-0">
+            <li class="mb-[4%]">
+              <a href="">Giới thiệu</a>
+            </li>
+            <li class="mb-[4%]">
+              <a href="">Sản phẩm</a>
+            </li>
+            <li class="mb-[4%]">
+              <a href="">Tin tức</a>
+            </li>
+            <li class="mb-[4%]">
+              <a href="">Hỗ trợ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-[25%]">
+          <div class="mb-[6%] lg:mb-[12%]">
+            <div class="mb-[4%] lg:mb-[8%] text-[#0A033C] font-bold text-[20px]">
+              Trải nghiệm miễn phí
+            </div>
+            <div
+              class="flex justify-center items-center lg:flex-col px-0 md:px-4 lg:px-0 space-x-6 lg:space-x-0 lg:items-start">
+              <div
+                class="cursor-pointer bg-black rounded-lg px-4 py-2 min-w-[132px] w-full lg:w-[75%] flex justify-center items-center space-x-2 mb-4">
+                <div class="h-full">
+                  <img src="./assets/images/ic_app_store.png" alt="" class="h-full">
+                </div>
+                <div class="text-white">
+                  <p class="text-[10px]">Download on the</p>
+                  <p class="font-medium">AppStore</p>
+                </div>
+              </div>
+              <div
+                class="cursor-pointer bg-black rounded-lg px-4 py-2 min-w-[132px] w-full lg:w-[75%] flex justify-center items-center space-x-2 mb-4">
+                <div class="h-full">
+                  <img src="./assets/images/ic_gg_play.png" alt="" class="h-full">
+                </div>
+                <div class="text-white">
+                  <p class="text-[10px]">GET IT ON</p>
+                  <p class="font-medium">Google Play</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-[6%] lg:mb-[12%]">
+            <div class="mb-[4%] lg:mb-[8%] text-[#0A033C] font-bold text-[20px]">
+              Liên hệ với chúng tôi
+            </div>
+            <div class="flex items-center space-x-4 px-0 md:px-4 lg:px-0">
+              <a href="">
+                <div class="h-[32px] w-[32px] flex justify-center items-center">
+                  <img src="./assets/images/ic_twitter.png" alt="" class="aspect-square">
+                </div>
+              </a>
+              <a href="">
+                <div class="h-[32px] w-[32px] flex justify-center items-center">
+                  <img src="./assets/images/ic_instagram.png" alt="" class="aspect-square">
+                </div>
+              </a>
+              <a href="">
+                <div class="h-[32px] w-[32px] flex justify-center items-center">
+                  <img src="./assets/images/ic_facebook.png" alt="" class="aspect-square">
+                </div>
+              </a>
+              <a href="">
+                <div class="h-[32px] w-[32px] flex justify-center items-center">
+                  <img src="./assets/images/ic_youtube.png" alt="" class="aspect-square">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[#EEEEEE] w-full">
+      <div
+        class="max-w-[1280px] w-full mx-auto py-6 px-2 md:px-4 lg:px-0 text-[#105296] font-bold text-center lg:text-start">
+        <p>ⓒ Copryright Betia English All Right Reserved and design by VTC Online</p>
+      </div>
+    </div>
+  </footer>
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/toastify-js.js"></script>
-  <script src="./assets/js/jquery-3.6.3.min.js"></script>
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
