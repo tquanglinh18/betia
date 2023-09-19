@@ -117,6 +117,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.bg_main_introduce{
+    background-image: url("../images/bg_main_introduce.png");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 select {
     /*for firefox*/
     -moz-appearance: none;
