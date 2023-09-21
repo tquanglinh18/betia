@@ -125,3 +125,10 @@
     right: 0;
     z-index: 999;
 }
+.slick_betia_products .slick-slide {
+    scale: 0.75;
+}
+
+.slick_betia_products .slick-slide.slick-current {
+    scale: 0.9;
+}

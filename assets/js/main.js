@@ -105,4 +105,38 @@ $(function () {
     },
   ]
   });
+
+  $(".slick_betia_products").slick({
+    slidesToShow: 1,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+		centerPadding: '25%',
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          centerMode: true,
+          centerPadding: '25%',
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          centerMode: true,
+          centerPadding: '25%',
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: false,
+        }
+      }
+    ]
+  });
 });
