@@ -124,6 +124,13 @@ body {
     background-position: center;
 }
 
+.bg-banner-news-detail {
+    /* background: -webkit-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background: -o-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    background: -moz-linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+    background: linear-gradient(#105296 60%, #fff 50%);
+  }
+
 select {
     /*for firefox*/
     -moz-appearance: none;
