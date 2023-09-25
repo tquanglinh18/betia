@@ -23,7 +23,6 @@ window.addEventListener("orientationchange", function () {
 });
 
 $(function () {
-
   $(".slick_betia_home").slick({
     slidesToShow: 1,
     infinite: true,
@@ -32,7 +31,7 @@ $(function () {
     autoplaySpeed: 2000,
     dots: false,
     centerMode: true,
-    centerPadding: '25%',
+    centerPadding: "25%",
     arrows: false,
   });
 
@@ -50,23 +49,23 @@ $(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".slick_betia_introduce").slick({
@@ -83,40 +82,40 @@ $(function () {
     prevArrow: `<button type="button">
     <img src="./assets/images/btn_prev.png" alt="">
   </button>`,
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-      }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-      }
-    },
-  ]
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".slick_betia_products").slick({
@@ -128,35 +127,42 @@ $(function () {
     dots: false,
     arrows: false,
     centerMode: true,
-		centerPadding: '25%',
+    centerPadding: "25%",
     responsive: [
       {
         breakpoint: 1280,
         settings: {
           centerMode: true,
-          centerPadding: '25%',
-        }
+          centerPadding: "25%",
+        },
       },
       {
         breakpoint: 1024,
         settings: {
           centerMode: true,
-          centerPadding: '25%',
-        }
+          centerPadding: "25%",
+        },
       },
       {
         breakpoint: 768,
         settings: {
           centerMode: false,
-        }
-      }
-    ]
+        },
+      },
+    ],
   });
 });
 
-function switchSlideHome() {
-  const slide = document.querySelectorAll(".slick_betia_home .slick-slide");
-  console.log("🚀 ~ file: main.js:159 ~ switchSlideHome ~ slide:", slide)
-}
-
-switchSlideHome();
+const listTabNew = document.querySelectorAll(".tab-news");
+const listContentNew = document.querySelectorAll(".tab-contents-news");
+listTabNew.forEach((tabNew, index) => {
+  tabNew.addEventListener("click", () => {
+    const lineSlt = document.querySelectorAll(".line-selected");
+    for (var i = 0; i < lineSlt.length; i++) {
+      lineSlt[i].classList.replace("selected", "hidden");
+      listContentNew[i].classList.replace("selected", "hidden");
+    }
+    lineSlt[index].classList.replace("hidden", "selected");
+    listContentNew[index].classList.replace("hidden", "selected");
+  });
+});

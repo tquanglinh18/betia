@@ -16,10 +16,10 @@
 
 <body>
 
-    <section class="w-full p-4">
+    <section class="w-full">
         <first-section>
             <div
-                class="max-w-[1150px] w-full mx-auto flex flex-col lg:flex-row lg:justify-between tetx-[#2A2A2A] py-[4%]">
+                class="max-w-[1150px] w-full mx-auto flex flex-col lg:flex-row lg:justify-between tetx-[#2A2A2A] py-[4%] px-4">
                 <div class="w-full lg:w-[55%] mb-[4%] lg:mb-0">
                     <img src="./assets/images/bg_main_introduce.png" alt="" class="aspect-video w-full rounded-lg">
                 </div>
@@ -38,9 +38,8 @@
         </first-section>
 
         <second-section>
-            <div class="w-full bg-[#F24B18] flex justify-center items-center mb-[4%] py-2">
-                <div
-                    class="max-w-[1150px] w-full flex flex-col-reverse lg:flex-row justify-evenly items-center p-4">
+            <div class="w-full bg-[#F24B18] flex justify-center items-center mb-[4%] py-2 px-4">
+                <div class="max-w-[1150px] w-full flex flex-col-reverse lg:flex-row justify-evenly items-center p-4">
                     <button type="button" class="px-4 py-2 text-[#F24B18] bg-white rounded">Tải ứng dụng</button>
                     <div class="text-[20px] font-bold lg:font-normal mb-[4%] lg:mb-0">
                         <div class="text-white font-medium text-[20px] text-center">Kanye West says he's running for
@@ -53,156 +52,599 @@
         </second-section>
 
         <third-section>
-            <div class="max-w-[1150px] w-full mx-auto flex flex-col lg:flex-row justify-center lg:justify-between mb-[8%] lg:mb-[6%]">
+            <div
+                class="max-w-[1150px] w-full mx-auto flex flex-col lg:flex-row justify-center lg:justify-between mb-[8%] lg:mb-[6%] px-4">
                 <div class="w-full lg:w-[65%] mb-[10%] lg:mb-0">
                     <div class="w-full flex space-x-8 mb-[4%]">
-                        <div class="">
+                        <div class="cursor-pointer tab-news">
                             <div class="font-bold text-[#3E3E3E] text-[18px] md:text-[20px]">
                                 Tất cả
                             </div>
-                            <div class="bg-[#F24B18] w-[70%] h-[2px]"></div>
+                            <div
+                                class="bg-[#F24B18] w-[70%] h-[2px] line-selected animate-[wiggle_1s_ease-in-out_infinite] selected">
+                            </div>
                         </div>
-                        <div class="">
+                        <div class="cursor-pointer tab-news">
                             <div class="font-bold text-[#3E3E3E] text-[18px] md:text-[20px]">
                                 Tin mới
                             </div>
-                            <div class="bg-[#F24B18] w-[70%] h-[2px]"></div>
+                            <div
+                                class="bg-[#F24B18] w-[70%] h-[2px] line-selected animate-[wiggle_1s_ease-in-out_infinite] hidden">
+                            </div>
                         </div>
-                        <div class="">
+                        <div class="cursor-pointer tab-news">
                             <div class="font-bold text-[#3E3E3E] text-[18px] md:text-[20px]">
                                 Tin khuyến mãi
                             </div>
-                            <div class="bg-[#F24B18] w-[70%] h-[2px]"></div>
-                        </div>
-                        <div class="">
-                            <div class="font-bold text-[#3E3E3E] text-[18px] md:text-[20px]">
-                                Tin gì gì đó đ* biết
+                            <div
+                                class="bg-[#F24B18] w-[70%] h-[2px] line-selected animate-[wiggle_1s_ease-in-out_infinite] hidden">
                             </div>
-                            <div class="bg-[#F24B18] w-[70%] h-[2px]"></div>
+                        </div>
+                        <div class="cursor-pointer tab-news">
+                            <div class="font-bold text-[#3E3E3E] text-[18px] md:text-[20px]">
+                                Tin gì gì đó
+                            </div>
+                            <div
+                                class="bg-[#F24B18] w-[70%] h-[2px] line-selected animate-[wiggle_1s_ease-in-out_infinite] hidden">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-6 gap-y-6 mb-[4%]">
-                        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
-                            <div class="w-full mb-[2%]">
-                                <img src="./assets/images/bg_news.JPEG" alt=""
-                                    class="w-full aspect-video object-cover rounded-lg">
-                            </div>
-                            <div class="p-4">
-                                <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
-                                    Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
-                                </p>
-                                <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story
-                                    Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story</p>
+                    <div class="flex justify-center items-center">
+                        <div class="tab-contents-news selected">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-6 gap-y-6 mb-[4%]">
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story
+                                            Get inspired by this revived W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
-                            <div class="w-full mb-[2%]">
-                                <img src="./assets/images/bg_news.JPEG" alt=""
-                                    class="w-full aspect-video object-cover rounded-lg">
-                            </div>
-                            <div class="p-4">
-                                <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
-                                    Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
-                                </p>
-                                <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story</p>
+                        <div class="tab-contents-news hidden">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-6 gap-y-6 mb-[4%]">
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story
+                                            Get inspired by this revived W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
-                            <div class="w-full mb-[2%]">
-                                <img src="./assets/images/bg_news.JPEG" alt=""
-                                    class="w-full aspect-video object-cover rounded-lg">
-                            </div>
-                            <div class="p-4">
-                                <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
-                                    Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
-                                </p>
-                                <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story</p>
+                        <div class="tab-contents-news hidden">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-6 gap-y-6 mb-[4%]">
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story
+                                            Get inspired by this revived W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
-                            <div class="w-full mb-[2%]">
-                                <img src="./assets/images/bg_news.JPEG" alt=""
-                                    class="w-full aspect-video object-cover rounded-lg">
-                            </div>
-                            <div class="p-4">
-                                <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
-                                    Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
-                                </p>
-                                <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story</p>
-                            </div>
-                        </div>
-                        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
-                            <div class="w-full mb-[2%]">
-                                <img src="./assets/images/bg_news.JPEG" alt=""
-                                    class="w-full aspect-video object-cover rounded-lg">
-                            </div>
-                            <div class="p-4">
-                                <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
-                                    Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
-                                </p>
-                                <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story</p>
-                            </div>
-                        </div>
-                        <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
-                            <div class="w-full mb-[2%]">
-                                <img src="./assets/images/bg_news.JPEG" alt=""
-                                    class="w-full aspect-video object-cover rounded-lg">
-                            </div>
-                            <div class="p-4">
-                                <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
-                                    Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
-                                </p>
-                                <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived W.H. Auden’s Hymn to the United
-                                    Nations. "Let music
-                                    for
-                                    peace Be the
-                                    paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick
-                                    and
-                                    Tock.So may the
-                                    story</p>
+                        <div class="tab-contents-news hidden">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-6 gap-y-6 mb-[4%]">
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story
+                                            Get inspired by this revived W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
+                                <div class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-lg">
+                                    <div class="w-full mb-[2%]">
+                                        <img src="./assets/images/bg_news.JPEG" alt=""
+                                            class="w-full aspect-video object-cover rounded-lg">
+                                    </div>
+                                    <div class="p-4">
+                                        <p class="text-[#1A82B3] mb-[2%] font-semibold line-clamp-2 md:text-[18px]">
+                                            Thể lệ chương trình “Thử thách phát âm cùng M-Speak”
+                                        </p>
+                                        <p class="line-clamp-5 text-[14px] md:text-base">Get inspired by this revived
+                                            W.H. Auden’s Hymn to the United
+                                            Nations. "Let music
+                                            for
+                                            peace Be the
+                                            paradigm, For peace means to change At the right time, As the World-Clock,
+                                            Goes Tick
+                                            and
+                                            Tock.So may the
+                                            story</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -214,7 +656,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="w-full lg:w-[30%]">
+                <div class="w-full lg:w-[35%]">
                     <div class="ml-[15%] lg:hidden">
                         <img src="./assets/images/ic_top_form.png" alt="">
                     </div>
@@ -266,6 +708,7 @@
                 </div>
             </div>
         </third-section>
+
     </section>
 
     <script src="./assets/js/aos.js"></script>
