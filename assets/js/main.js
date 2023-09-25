@@ -23,6 +23,19 @@ window.addEventListener("orientationchange", function () {
 });
 
 $(function () {
+
+  $(".slick_betia_home").slick({
+    slidesToShow: 1,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    dots: false,
+    centerMode: true,
+    centerPadding: '25%',
+    arrows: false,
+  });
+
   $(".slick_betia_feedback").slick({
     slidesToShow: 4,
     infinite: true,
@@ -140,3 +153,10 @@ $(function () {
     ]
   });
 });
+
+function switchSlideHome() {
+  const slide = document.querySelectorAll(".slick_betia_home .slick-slide");
+  console.log("🚀 ~ file: main.js:159 ~ switchSlideHome ~ slide:", slide)
+}
+
+switchSlideHome();

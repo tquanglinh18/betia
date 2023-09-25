@@ -127,8 +127,10 @@
 }
 .slick_betia_products .slick-slide {
     scale: 0.75;
+    opacity: 0.5;
 }
 
 .slick_betia_products .slick-slide.slick-current {
     scale: 0.9;
+    opacity: 1;
 }
