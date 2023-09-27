@@ -117,6 +117,31 @@ $(function () {
       },
     ],
   });
+  $(".related-news").slick({
+    slidesToShow: 3,
+    infinite: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
   $(".slick_betia_products").slick({
     slidesToShow: 1,
@@ -153,6 +178,18 @@ $(function () {
   });
 });
 
+$(".slide-banner").slick({
+  slidesToShow: 1,
+  infinite: false,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  dots: false,
+  arrows: false,
+  centerMode: true,
+  centerPadding: "10%",
+});
+
 const listTabNew = document.querySelectorAll(".tab-news");
 const listContentNew = document.querySelectorAll(".tab-contents-news");
 listTabNew.forEach((tabNew, index) => {
@@ -165,4 +202,42 @@ listTabNew.forEach((tabNew, index) => {
     lineSlt[index].classList.replace("hidden", "selected");
     listContentNew[index].classList.replace("hidden", "selected");
   });
+});
+
+const listCard = document.querySelectorAll(".box");
+const listDot = document.querySelectorAll(".dot");
+setInterval(() => {
+  var indexActive = 0;
+  for (var i = 0; i < listCard.length; i++) {
+    if (listCard[i].classList.contains("active")) {
+      indexActive = i;
+    }
+  }
+  listCard[indexActive].classList.remove("active");
+  listDot[indexActive].classList.remove("active-dot");
+  console.log(indexActive + 1 <= listCard.length);
+  if (indexActive + 1 < listCard.length) {
+    listCard[indexActive + 1].classList.add("active");
+    listDot[indexActive + 1].classList.add("active-dot");
+  } else {
+    listCard[0].classList.add("active");
+    listDot[0].classList.add("active-dot");
+  }
+}, 3000);
+
+function setActiveSlide(index) {
+  for (var i = 0; i < listCard.length; i++) {
+    listCard[i].classList.remove("active");
+    listDot[i].classList.remove("active-dot");
+  }
+  listCard[index].classList.add("active");
+  listDot[index].classList.add("active-dot");
+}
+
+listCard.forEach((card, index) => {
+  card.addEventListener("click", () => setActiveSlide(index));
+});
+
+listDot.forEach((dot, index) => {
+  dot.addEventListener("click", () => setActiveSlide(index));
 });
