@@ -23,6 +23,8 @@ window.addEventListener("orientationchange", function () {
 });
 
 $(function () {
+
+// home page
   $(".slick_betia_home").slick({
     slidesToShow: 1,
     infinite: true,
@@ -34,6 +36,7 @@ $(function () {
     centerPadding: "25%",
     arrows: false,
   });
+
 
   $(".slick_betia_feedback").slick({
     slidesToShow: 4,
@@ -67,6 +70,43 @@ $(function () {
       },
     ],
   });
+
+const listCard = document.querySelectorAll(".box");
+const listDot = document.querySelectorAll(".dot");
+setInterval(() => {
+  var indexActive = 0;
+  for (var i = 0; i < listCard.length; i++) {
+    if (listCard[i].classList.contains("active")) {
+      indexActive = i;
+    }
+  }
+  listCard[indexActive].classList.remove("active");
+  listDot[indexActive].classList.remove("active-dot");
+  if (indexActive + 1 < listCard.length) {
+    listCard[indexActive + 1].classList.add("active");
+    listDot[indexActive + 1].classList.add("active-dot");
+  } else {
+    listCard[0].classList.add("active");
+    listDot[0].classList.add("active-dot");
+  }
+}, 7000);
+
+function setActiveSlide(index) {
+  for (var i = 0; i < listCard.length; i++) {
+    listCard[i].classList.remove("active");
+    listDot[i].classList.remove("active-dot");
+  }
+  listCard[index].classList.add("active");
+  listDot[index].classList.add("active-dot");
+}
+
+listCard.forEach((card, index) => {
+  card.addEventListener("click", () => setActiveSlide(index));
+});
+
+listDot.forEach((dot, index) => {
+  dot.addEventListener("click", () => setActiveSlide(index));
+});
 
   $(".slick_betia_introduce").slick({
     slidesToShow: 3,
@@ -117,6 +157,8 @@ $(function () {
       },
     ],
   });
+
+  // Tin tuc lien quan
   $(".related-news").slick({
     slidesToShow: 3,
     infinite: true,
@@ -142,6 +184,9 @@ $(function () {
       },
     ],
   });
+
+
+  /// Products Page
 
   $(".slick_betia_products").slick({
     slidesToShow: 1,
@@ -177,18 +222,7 @@ $(function () {
     ],
   });
 });
-
-$(".slide-banner").slick({
-  slidesToShow: 1,
-  infinite: false,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
-  dots: false,
-  arrows: false,
-  centerMode: true,
-  centerPadding: "10%",
-});
+// News Page
 
 const listTabNew = document.querySelectorAll(".tab-news");
 const listContentNew = document.querySelectorAll(".tab-contents-news");
@@ -206,43 +240,7 @@ listTabNew.forEach((tabNew, index) => {
   });
 });
 
-const listCard = document.querySelectorAll(".box");
-const listDot = document.querySelectorAll(".dot");
-const slideActiveAuto = setInterval(() => {
-  var indexActive = 0;
-  for (var i = 0; i < listCard.length; i++) {
-    if (listCard[i].classList.contains("active")) {
-      indexActive = i;
-    }
-  }
-  listCard[indexActive].classList.remove("active");
-  listDot[indexActive].classList.remove("active-dot");
-  console.log(indexActive + 1 <= listCard.length);
-  if (indexActive + 1 < listCard.length) {
-    listCard[indexActive + 1].classList.add("active");
-    listDot[indexActive + 1].classList.add("active-dot");
-  } else {
-    listCard[0].classList.add("active");
-    listDot[0].classList.add("active-dot");
-  }
-}, 3000);
-
-function setActiveSlide(index) {
-  for (var i = 0; i < listCard.length; i++) {
-    listCard[i].classList.remove("active");
-    listDot[i].classList.remove("active-dot");
-  }
-  listCard[index].classList.add("active");
-  listDot[index].classList.add("active-dot");
-}
-
-listCard.forEach((card, index) => {
-  card.addEventListener("click", () => setActiveSlide(index));
-});
-
-listDot.forEach((dot, index) => {
-  dot.addEventListener("click", () => setActiveSlide(index));
-});
+// QA Page
 
 const listQuestion = document.querySelectorAll(".question");
 const listAnswer = document.querySelectorAll(".answer");
@@ -256,8 +254,3 @@ listQuestion.forEach((question, index) => {
   });
 });
 
-const urlLocation = location.href;
-if(urlLocation != "http://127.0.0.1:5500/"| "http://127.0.0.1:5500/home") {
-  clearInterval(slideActiveAuto)
-  
-}
