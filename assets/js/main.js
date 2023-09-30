@@ -102,7 +102,7 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
         },
@@ -196,17 +196,19 @@ listTabNew.forEach((tabNew, index) => {
   tabNew.addEventListener("click", () => {
     const lineSlt = document.querySelectorAll(".line-selected");
     for (var i = 0; i < lineSlt.length; i++) {
+      listTabNew[i].classList.remove("tab-news__selected");
       lineSlt[i].classList.replace("selected", "hidden");
       listContentNew[i].classList.replace("selected", "hidden");
     }
     lineSlt[index].classList.replace("hidden", "selected");
     listContentNew[index].classList.replace("hidden", "selected");
+    listTabNew[index].classList.add("tab-news__selected");
   });
 });
 
 const listCard = document.querySelectorAll(".box");
 const listDot = document.querySelectorAll(".dot");
-setInterval(() => {
+const slideActiveAuto = setInterval(() => {
   var indexActive = 0;
   for (var i = 0; i < listCard.length; i++) {
     if (listCard[i].classList.contains("active")) {
@@ -241,3 +243,21 @@ listCard.forEach((card, index) => {
 listDot.forEach((dot, index) => {
   dot.addEventListener("click", () => setActiveSlide(index));
 });
+
+const listQuestion = document.querySelectorAll(".question");
+const listAnswer = document.querySelectorAll(".answer");
+const listDropdown = document.querySelectorAll(".icon-dropdown");
+
+listQuestion.forEach((question, index) => {
+  question.addEventListener("click", () => {
+    listDropdown[index].classList.toggle("dropdown-rotate");
+    listAnswer[index].classList.toggle("hidden");
+    console.log('clicked');
+  });
+});
+
+const urlLocation = location.href;
+if(urlLocation != "http://127.0.0.1:5500/"| "http://127.0.0.1:5500/home") {
+  clearInterval(slideActiveAuto)
+  
+}

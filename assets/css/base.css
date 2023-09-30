@@ -1,205 +1,233 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Light.eot');
-    src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Light.woff2') format('woff2'),
-        url('../fonts/Raleway-Light.woff') format('woff'),
-        url('../fonts/Raleway-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Light.eot");
+  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Light.woff2") format("woff2"),
+    url("../fonts/Raleway-Light.woff") format("woff"),
+    url("../fonts/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-ExtraLight.eot');
-    src: url('../fonts/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Raleway-ExtraLight.woff') format('woff'),
-        url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-ExtraLight.eot");
+  src: url("../fonts/Raleway-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Raleway-ExtraLight.woff") format("woff"),
+    url("../fonts/Raleway-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-ExtraBold.eot');
-    src: url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Raleway-ExtraBold.woff') format('woff'),
-        url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Raleway-ExtraBold.woff") format("woff"),
+    url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Bold.eot');
-    src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Bold.woff2') format('woff2'),
-        url('../fonts/Raleway-Bold.woff') format('woff'),
-        url('../fonts/Raleway-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Bold.woff2") format("woff2"),
+    url("../fonts/Raleway-Bold.woff") format("woff"),
+    url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Regular.eot');
-    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/Raleway-Regular.woff') format('woff'),
-        url('../fonts/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/Raleway-Regular.woff") format("woff"),
+    url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Medium.eot');
-    src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Medium.woff2') format('woff2'),
-        url('../fonts/Raleway-Medium.woff') format('woff'),
-        url('../fonts/Raleway-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.eot");
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Medium.woff2") format("woff2"),
+    url("../fonts/Raleway-Medium.woff") format("woff"),
+    url("../fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Thin.eot');
-    src: url('../fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Thin.woff2') format('woff2'),
-        url('../fonts/Raleway-Thin.woff') format('woff'),
-        url('../fonts/Raleway-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Thin.eot");
+  src: url("../fonts/Raleway-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Thin.woff2") format("woff2"),
+    url("../fonts/Raleway-Thin.woff") format("woff"),
+    url("../fonts/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-SemiBold.eot');
-    src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
-        url('../fonts/Raleway-SemiBold.woff') format('woff'),
-        url('../fonts/Raleway-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-SemiBold.woff2") format("woff2"),
+    url("../fonts/Raleway-SemiBold.woff") format("woff"),
+    url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("../fonts/NotoSansKR-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-    font-family: 'Raleway';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Raleway";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-noto-sans-kr {
+  font-family: "NotoSansKR";
 }
 
 .bg_second_section {
-    background-image: url("../images/bg_second_section.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-image: url("../images/bg_second_section.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .gradient_bg_beita_package {
-    background-image: linear-gradient(to right, rgba(247, 102, 31, 0.05), rgba(234, 234, 234, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(247, 102, 31, 0.05),
+    rgba(234, 234, 234, 0)
+  );
 }
 
 .download_section {
-    background-image: url("../images/bg_download_section.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-image: url("../images/bg_download_section.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .bg_main_introduce {
-    background-image: url("../images/bg_main_introduce.png");
-    background-size: auto auto;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../images/bg_main_introduce.png");
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bg-banner-news-detail {
-    background: linear-gradient(#105296 60%, #fff 50%);
+  background: linear-gradient(#105296 60%, #fff 50%);
 }
 
 select {
-    /*for firefox*/
-    -moz-appearance: none;
-    /*for chrome*/
-    -webkit-appearance: none;
-    appearance: none;
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /*for IE10+*/
 select::-ms-expand {
-    display: none;
+  display: none;
 }
 
-.selected {
-    display: block;
+.selected,
+.active {
+  display: block;
+}
+
+.tab-news__selected {
+  color: #105296;
+}
+
+.dropdown-rotate {
+  rotate: 180deg;
 }
 
 .box {
-    display: none;
-    width: 10%;
-    height: 100%;
-    margin-right: 20px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-    transition: all linear 0.6s;
-    cursor: pointer;
+  display: none;
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  transition: all linear 0.6s;
+  cursor: pointer;
 }
 
 .box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .box.active {
-    display: block;
-    width: 100%;
-    transition: all linear 0.6s;
+  display: block;
+  width: 100%;
+  transition: all linear 0.6s;
 }
 
 .dot {
-    height: 8px;
-    width: 8px;
-    background-color: #D9D9D9;
-    border-radius: 999px;
-    transition: all linear 0.6s;
-    cursor: pointer;
+  height: 8px;
+  width: 8px;
+  background-color: #d9d9d9;
+  border-radius: 999px;
+  transition: all linear 0.6s;
+  cursor: pointer;
 }
 
 .active-dot {
-    scale: 1.6;
-    background-color: #F24B18;
-    transition: all linear 0.6s;
+  scale: 1.6;
+  background-color: #f24b18;
+  transition: all linear 0.6s;
 }
 
 @media screen and (min-width: 640px) {
-    .box.active {
-        width: 90%;
-    }
-    .box {
-        display: none;
-    }
+  .box.active {
+    width: 90%;
+  }
+  .box {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 640px) and (orientation: landscape) {}
+@media screen and (min-width: 640px) and (orientation: landscape) {
+}
 
 @media screen and (min-width: 1024px) {
-    .box.active {
-        width: 65%;
-    }
-    .box {
-        display: block;
-    }
+  .box {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1289px) {
+  .box.active {
+    width: 70%;
+  }
 }
