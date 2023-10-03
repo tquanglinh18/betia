@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="w-full bg-white py-4 px-8 sticky top-0 right-0 left-0 z-50">
+    <header class="w-full bg-white py-4 px-4 md:px-8 sticky top-0 right-0 left-0 z-50">
       <div class="flex items-center justify-between lg:justify-around w-full">
         <div class="">
           <img
@@ -52,11 +52,16 @@
             </button>
           </div>
         </div>
-        <button type="button" class="lg:hidden">
+        <button type="button" class="lg:hidden menu-mobile">
           <div
             class="shadow-[0_0_4px_0_rgba(0,0,0,0.25)] rounded-xl p-2 md:p-3"
           >
-            <img src="./assets/images/ic_menu_mobile.png" alt="" class="" />
+            <div class="ic-menu">
+              <img src="./assets/images/ic_menu_mobile.png" alt="" class="" />
+            </div>
+            <div class="ic-close hidden">
+              <img src="./assets/images/ic_close.png" alt="" class="" />
+            </div>
           </div>
         </button>
       </div>
@@ -318,10 +323,7 @@
                 </h3>
                 <p>Chỉ:</p>
                 <h3 class="font-bold text-[20px] mb-[8%]">99GO/ tháng</h3>
-                <button
-                  type="button"
-                  class="buy-package-button"
-                >
+                <button type="button" class="buy-package-button">
                   Chọn gói
                 </button>
               </div>
@@ -357,10 +359,7 @@
                 </h3>
                 <p>Chỉ:</p>
                 <h3 class="font-bold text-[20px] mb-[8%]">99GO/ tháng</h3>
-                <button
-                  type="button"
-                  class="buy-package-button"
-                >
+                <button type="button" class="buy-package-button">
                   Chọn gói
                 </button>
               </div>
@@ -396,10 +395,7 @@
                 </h3>
                 <p>Chỉ:</p>
                 <h3 class="font-bold text-[20px] mb-[8%]">99GO/ tháng</h3>
-                <button
-                  type="button"
-                  class="buy-package-button"
-                >
+                <button type="button" class="buy-package-button">
                   Chọn gói
                 </button>
               </div>
@@ -1140,7 +1136,7 @@
                 Trải nghiệm miễn phí
               </div>
               <div
-                class="flex flex-col justify-start items-start space-y-4 md:space-y-0 md:space-x-4 mb-[6%]"
+                class="flex flex-col justify-start items-start space-y-4 mb-[6%]"
               >
                 <div
                   class="cursor-pointer bg-black rounded-lg px-4 py-2 w-full max-w-[173px] flex justify-center items-center space-x-2"
@@ -1254,6 +1250,114 @@
       class="contact fixed bottom-[5%] left-[5%] h-[42px] w-[42px] md:w-[64px] md:h-[64px] lg:w-[72px] lg:h-[72px] cursor-pointer"
     >
       <img src="./assets/images/ic_contact_us.png" alt="" />
+    </div>
+
+    <div class="menu-mobile-content hidden lg:hidden">
+      <div
+        class="fixed inset-0 h-full w-full bg-white flex flex-col justify-between items-start"
+      >
+        <div class="p-4 mt-[25%] md:mt-[15%] w-full">
+          <div class="">
+            <a href="" class="mb-8 flex justify-between items-center">
+              <div class="">Trang chủ</div>
+              <div class="">
+                <img src="./assets/images/ic_next_arrow.png" alt="" />
+              </div>
+            </a>
+
+            <a href="" class="mb-8 flex justify-between items-center">
+              <div class="">Giới thiệu</div>
+              <div class="">
+                <img src="./assets/images/ic_next_arrow.png" alt="" />
+              </div>
+            </a>
+
+            <a href="" class="mb-8 flex justify-between items-center">
+              <div class="">Sản phẩm</div>
+              <div class="">
+                <img src="./assets/images/ic_next_arrow.png" alt="" />
+              </div>
+            </a>
+
+            <a href="" class="mb-8 flex justify-between items-center">
+              <div class="">Tin tức</div>
+              <div class="">
+                <img src="./assets/images/ic_next_arrow.png" alt="" />
+              </div>
+            </a>
+
+            <a href="" class="mb-8 flex justify-between items-center">
+              <div class="">Hỗ trợ</div>
+              <div class="">
+                <img src="./assets/images/ic_next_arrow.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="flex justify-evenly items-start space-x-2">
+            <div
+              class="cursor-pointer bg-black rounded-lg px-4 py-2 w-full max-w-[173px] flex justify-center items-center space-x-2"
+            >
+              <div class="h-full w-[24px]">
+                <img
+                  src="./assets/images/ic_app_store.png"
+                  alt=""
+                  class="w-full aspect-square object-contain"
+                />
+              </div>
+              <div class="text-white flex flex-col justify-start items-start">
+                <p class="text-[10px]">Download on the</p>
+                <p class="font-semibold text-[14px]">App Store</p>
+              </div>
+            </div>
+            <div
+              class="cursor-pointer bg-black rounded-lg px-4 py-2 w-full max-w-[173px] flex justify-center items-center space-x-2"
+            >
+              <div class="h-full w-[24px]">
+                <img
+                  src="./assets/images/ic_gg_play.png"
+                  alt=""
+                  class="w-full aspect-square object-contain"
+                />
+              </div>
+              <div class="text-white flex flex-col justify-start items-start">
+                <p class="text-[10px]">GET IT ON</p>
+                <p class="font-semibold text-[14px]">Google Play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 w-full bg-[#DBDBDC] flex justify-evenly items-center">
+          <a href="">
+            <img
+              src="./assets/images/ic_zalo.png"
+              alt=""
+              class="w-[24px] aspect-square object-cover"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./assets/images/ic_facebook.png"
+              alt=""
+              class="w-[24px] aspect-square object-cover"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./assets/images/ic_youtube.png"
+              alt=""
+              class="w-[24px] aspect-square object-cover"
+            />
+          </a>
+          <a href="">
+            <img
+              src="./assets/images/ic_tiktok.png"
+              alt=""
+              class="w-[24px] aspect-square object-cover"
+            />
+          </a>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/js/aos.js"></script>

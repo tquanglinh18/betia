@@ -23,8 +23,7 @@ window.addEventListener("orientationchange", function () {
 });
 
 $(function () {
-
-// home page
+  // home page
   $(".slick_betia_home").slick({
     slidesToShow: 1,
     infinite: true,
@@ -36,7 +35,6 @@ $(function () {
     centerPadding: "25%",
     arrows: false,
   });
-
 
   $(".slick_betia_feedback").slick({
     slidesToShow: 4,
@@ -71,42 +69,42 @@ $(function () {
     ],
   });
 
-const listCard = document.querySelectorAll(".box");
-const listDot = document.querySelectorAll(".dot");
-setInterval(() => {
-  var indexActive = 0;
-  for (var i = 0; i < listCard.length; i++) {
-    if (listCard[i].classList.contains("active")) {
-      indexActive = i;
+  const listCard = document.querySelectorAll(".box");
+  const listDot = document.querySelectorAll(".dot");
+  setInterval(() => {
+    var indexActive = 0;
+    for (var i = 0; i < listCard.length; i++) {
+      if (listCard[i].classList.contains("active")) {
+        indexActive = i;
+      }
     }
-  }
-  listCard[indexActive].classList.remove("active");
-  listDot[indexActive].classList.remove("active-dot");
-  if (indexActive + 1 < listCard.length) {
-    listCard[indexActive + 1].classList.add("active");
-    listDot[indexActive + 1].classList.add("active-dot");
-  } else {
-    listCard[0].classList.add("active");
-    listDot[0].classList.add("active-dot");
-  }
-}, 7000);
+    listCard[indexActive].classList.remove("active");
+    listDot[indexActive].classList.remove("active-dot");
+    if (indexActive + 1 < listCard.length) {
+      listCard[indexActive + 1].classList.add("active");
+      listDot[indexActive + 1].classList.add("active-dot");
+    } else {
+      listCard[0].classList.add("active");
+      listDot[0].classList.add("active-dot");
+    }
+  }, 7000);
 
-function setActiveSlide(index) {
-  for (var i = 0; i < listCard.length; i++) {
-    listCard[i].classList.remove("active");
-    listDot[i].classList.remove("active-dot");
+  function setActiveSlide(index) {
+    for (var i = 0; i < listCard.length; i++) {
+      listCard[i].classList.remove("active");
+      listDot[i].classList.remove("active-dot");
+    }
+    listCard[index].classList.add("active");
+    listDot[index].classList.add("active-dot");
   }
-  listCard[index].classList.add("active");
-  listDot[index].classList.add("active-dot");
-}
 
-listCard.forEach((card, index) => {
-  card.addEventListener("click", () => setActiveSlide(index));
-});
+  listCard.forEach((card, index) => {
+    card.addEventListener("click", () => setActiveSlide(index));
+  });
 
-listDot.forEach((dot, index) => {
-  dot.addEventListener("click", () => setActiveSlide(index));
-});
+  listDot.forEach((dot, index) => {
+    dot.addEventListener("click", () => setActiveSlide(index));
+  });
 
   $(".slick_betia_introduce").slick({
     slidesToShow: 3,
@@ -185,7 +183,6 @@ listDot.forEach((dot, index) => {
     ],
   });
 
-
   /// Products Page
 
   $(".slick_betia_products").slick({
@@ -250,7 +247,22 @@ listQuestion.forEach((question, index) => {
   question.addEventListener("click", () => {
     listDropdown[index].classList.toggle("dropdown-rotate");
     listAnswer[index].classList.toggle("hidden");
-    console.log('clicked');
+    console.log("clicked");
   });
 });
 
+// Active Hidden Menu Mobile
+
+const menuMobileBtn = document.querySelector(".menu-mobile");
+
+const menuMobileContent = document.querySelector(".menu-mobile-content");
+
+menuMobileBtn.addEventListener("click", () => activeHiddenMenuMobile());
+
+function activeHiddenMenuMobile() {
+  const icMenuElm = document.querySelector(".ic-menu");
+  const icCloseElm = document.querySelector(".ic-close");
+  menuMobileContent.classList.toggle("hidden");
+  icMenuElm.classList.toggle("hidden");
+  icCloseElm.classList.toggle("hidden");
+}
